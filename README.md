@@ -1,5 +1,5 @@
 # SAB
-Student Attendance Board
+Student Attendance Board finished in 2014
 # Technology specification
 Android (4.2) + Web client + Google Cloud Messaging service + LAMP stack on (000webhost.com)
 # Description

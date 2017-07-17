@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <TextView
+        android:id="@+id/lblStudentName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="20dp"
+        android:text="Children Name: "
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textSize="18sp" />
+
+    <EditText
+        android:id="@+id/txtStudentName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/lblStudentName"
+        android:layout_alignParentRight="true"
+        android:layout_toRightOf="@+id/lblStudentName"
+        android:ems="10"
+        android:textColor="#000"
+        android:enabled="false" >
+
+        <requestFocus />
+    </EditText>
+
+    <TextView
+        android:id="@+id/lblReason"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/lblStudentName"
+        android:layout_below="@+id/lblStudentName"
+        android:layout_marginTop="48dp"
+        android:text="Absence Reason: "
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textSize="18sp" />
+
+    <EditText
+        android:id="@+id/editText1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@id/lblReason"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/lblReason"
+        android:layout_toRightOf="@+id/lblReason"
+        android:ems="10"
+        android:hint="Enter your reason here"
+        android:inputType="textMultiLine"
+        android:scrollbarAlwaysDrawVerticalTrack="true"
+        android:singleLine="false"/>
+
+    <Button
+        android:id="@+id/btnSubmit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/editText1"
+        android:layout_marginLeft="21dp"
+        android:layout_marginTop="50dp"
+        android:minWidth="64dp"
+        android:text="Submit" />
+
+    <Button
+        android:id="@+id/btnClear"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/btnSubmit"
+        android:layout_marginTop="26dp"
+        android:layout_toLeftOf="@id/btnSubmit"
+        android:minWidth="65dp"
+        android:text="Clear " />
+
+</RelativeLayout>
